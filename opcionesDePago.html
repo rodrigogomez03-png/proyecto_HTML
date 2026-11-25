@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Opciones de pago | Glitch Control</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/opcionesDePago.css">
 </head>
 <body>
-     <header class="header">
+
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="img/icono.png" alt="Glitch Control">
             <div class="logo-texto">
@@ -31,9 +33,129 @@
 
         <div class="acciones">
             <a href="comunidad.html"><i class="fa-solid fa-bell"></i></a>
-            <a href="opcionesDepago.html"  class="activo"><i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="opcionesDePago.html" class="activo"><i class="fa-solid fa-basket-shopping"></i></a>
         </div>
     </header>
-        
+
+    <main class="pago">
+
+        <section class="pago-encabezado">
+            <div>
+                <h1>Métodos de pago</h1>
+                <p>Elige cómo quieres pagar tu pedido</p>
+            </div>
+
+            <div class="pasos">
+                <div class="paso completado">
+                    <span class="paso-numero"><i class="fa-solid fa-check"></i></span>
+                    Carrito
+                </div>
+                <span class="linea linea-morada"></span>
+                <div class="paso actual">
+                    <span class="paso-numero">2</span>
+                    Pago
+                </div>
+                <span class="linea"></span>
+                <div class="paso">
+                    <span class="paso-numero">3</span>
+                    Confirmación
+                </div>
+            </div>
+        </section>
+
+        <div class="pago-contenido">
+
+            <section class="metodos">
+                <label class="metodo metodo-tarjeta">
+                    <img src="img/tarjeta.png" alt="Tarjeta">
+                    <div class="metodo-info">
+                        <h3>Tarjeta de crédito</h3>
+                            <p>Visa, Mastercard y American Express</p>
+                     </div>
+                    <input type="radio" name="metodo" checked>
+                </label>
+
+                <form class="form-tarjeta">
+                    <label>Número de tarjeta
+                        <input type="text" placeholder="0000 0000 0000 0000">
+                    </label>
+                    <label>Nombre de tarjeta
+                        <input type="text" placeholder="Como aparece la tarjeta">
+                    </label>
+                    <div class="fila-doble">
+                        <label>Vence
+                            <input type="text" placeholder="MM / AA">
+                        </label>
+                        <label>CVV
+                            <input type="text" placeholder="...">
+                        </label>
+                    </div>
+                </form>
+
+                <label class="metodo">
+                    <input type="radio" name="metodo">
+                    <img src="img/paypal.png" alt="PayPal">
+                    <div class="metodo-info">
+                        <strong>PayPal</strong>
+                        <span>Paga con tu cuenta de PayPal</span>
+                    </div>
+                </label>
+
+                <label class="metodo">
+                    <input type="radio" name="metodo">
+                    <img src="img/nequi.png" alt="Nequi">
+                    <div class="metodo-info">
+                        <strong>Nequi</strong>
+                        <span>Paga desde tu app de Nequi</span>
+                    </div>
+                </label>
+
+                <label class="metodo">
+                    <input type="radio" name="metodo">
+                    <img src="img/daviplata.png" alt="Davi Plata">
+                    <div class="metodo-info">
+                        <strong>Davi Plata</strong>
+                        <span>Paga con tu DaviPlata</span>
+                    </div>
+                </label>
+
+                <a href="historial-compras.html" class="boton boton-normal">Historial de compras</a>
+            </section>
+
+            <aside class="resumen">
+                <h2>Resumen del pedido</h2>
+
+                <div class="resumen-fila">
+                    <span class="gris">Ítems (4)</span>
+                    <span>$0.00</span>
+                </div>
+
+                <div class="resumen-fila resumen-total">
+                    <strong>Total</strong>
+                    <strong class="monto">$0.00</strong>
+                </div>
+
+                <input type="text" class="cupon" placeholder="Agregar cupón">
+
+                <h3>Tus datos</h3>
+                <div class="dato">
+                <p class="etiqueta">Nombre</p>
+                      <p>xxxxxxxxxxxxxx</p>
+                </div>
+                <div class="dato">
+                <p class="etiqueta">Correo</p>
+                         <p>xxxxxxxxxxxxxx</p>
+                </div><div class="dato">
+                     <p class="etiqueta">Documento</p>
+                    <p>xxxxxxxxxxxxxx</p>
+                    </div>
+                <a href="" class="editar">Editar</a>
+
+                <a href="ConfirmacionPago.html" class="boton boton-ancho">Continuar al pago →</a>
+            </aside>
+
+        </div>
+    </main>
+
 </body>
 </html>

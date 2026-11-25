@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 :root {
     /* Colores (de los estilos de Figma) */
     --color-banner: #0B0914;
@@ -11,12 +6,13 @@
     --color-texto: #B9B4C8;
     --color-rosa: #FF2BD6;
     --color-verde: #B9FF2C;
+    --color-neon: #B9FF2C;
     --color-trazo: #30234A;
     --color-fondo-trazo: #11101A;
     --color-boton: #B026FF;
-    --color-neon: #B9FF2C;
     --color-blanco: #FFFFFF;
     --color-negro: #000000;
+
     /* Tipografía */
     --fuente: 'Inter', sans-serif;
     --fs-h1: 34px;
@@ -34,4 +30,137 @@
     --peso-regular: 400;
     --peso-semibold: 600;
     --peso-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente);
+    font-size: var(--fs-body);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+    background-color: var(--color-banner);
+    border-bottom: 1px solid var(--color-trazo);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-blanco);
+}
+
+.logo-texto span {
+    font-size: var(--fs-caption);
+    color: var(--color-boton);
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    padding: 22px 0;
+    font-size: var(--fs-nav);
+    font-weight: var(--peso-semibold);
+    color: var(--color-blanco);
+    border-bottom: 2px solid transparent;
+}
+
+.menu a.activo,
+.acciones a.activo {
+    border-bottom-color: var(--color-boton);
+}
+
+.acciones {
+    display: flex;
+    gap: 24px;
+    font-size: 20px;
+    color: var(--color-blanco);
+}
+
+.acciones a {
+    padding: 22px 0;
+    border-bottom: 2px solid transparent;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: var(--color-boton);
+    color: var(--color-blanco);
+    font-size: var(--fs-boton);
+    font-weight: var(--peso-semibold);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boton-borde {
+    background-color: transparent;
+    border: 1px solid var(--color-boton);
+}
+
+/* Stepper (Carrito / Pago / Confirmación) */
+.pasos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.paso {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--fs-body2);
+    color: var(--color-blanco);
+}
+
+.paso-numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    font-size: var(--fs-caption);
+}
+
+.paso.completado .paso-numero,
+.paso.actual .paso-numero {
+    background-color: var(--color-boton);
+    color: var(--color-blanco);
+}
+
+.linea {
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-blanco);
 }

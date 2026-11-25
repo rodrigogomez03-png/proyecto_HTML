@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Confirmación de pago | Glitch Control</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/ConfirmacionPago.css">
 </head>
 <body>
-     <header class="header">
+
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="img/icono.png" alt="Glitch Control">
             <div class="logo-texto">
@@ -31,8 +33,57 @@
 
         <div class="acciones">
             <a href="comunidad.html"><i class="fa-solid fa-bell"></i></a>
-            <a href="opcionesDepago.html"  class="activo"><i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="opcionesDePago.html" class="activo"><i class="fa-solid fa-basket-shopping"></i></a>
         </div>
     </header>
+
+    <main class="confirmacion">
+
+        <div class="pasos pasos-final">
+            <div class="paso completado">
+                <span class="paso-numero"><i class="fa-solid fa-check"></i></span>
+                Carrito
+            </div>
+            <span class="linea"></span>
+            <div class="paso completado">
+                <span class="paso-numero"><i class="fa-solid fa-check"></i></span>
+                Pago
+            </div>
+            <span class="linea"></span>
+            <div class="paso actual">
+                <span class="paso-numero">3</span>
+                Confirmación
+            </div>
+        </div>
+
+        <div class="icono-exito">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h1>¡COMPRA EXITOSA!</h1>
+        <p class="subtitulo">Tu pedido ha sido procesado correctamente</p>
+
+        <section class="resumen-compra">
+            <div>
+                <small>Número de pedido</small>
+                <strong>xxxxx</strong>
+            </div>
+            <div>
+                <small>Método de pago</small>
+                <strong>Tarjeta de crédito</strong>
+            </div>
+            <div>
+                <small>Total</small>
+                <strong>$0.00</strong>
+            </div>
+        </section>
+
+        <div class="botones">
+            <a href="catalogo.html" class="boton boton-borde">Ver más juegos</a>
+            <a href="catalogo.html" class="boton">Seguir comprando</a>
+        </div>
+
+    </main>
+
 </body>
 </html>
