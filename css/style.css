@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Colores (de los estilos de Figma) */
+    --color-banner: #0B0914;
+    --color-fondo: #07060D;
+    --color-tarjeta: #11101A;
+    --color-texto: #B9B4C8;
+    --color-rosa: #FF2BD6;
+    --color-verde: #B9FF2C;
+    --color-trazo: #30234A;
+    --color-fondo-trazo: #11101A;
+    --color-boton: #B026FF;
+    --color-neon: #B9FF2C;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    /* Tipografía */
+    --fuente: 'Inter', sans-serif;
+    --fs-h1: 34px;
+    --fs-h2: 22px;
+    --fs-h3: 18px;
+    --fs-h4: 24px;
+    --fs-h5: 20px;
+    --fs-body: 14px;
+    --fs-body2: 12px;
+    --fs-caption: 11px;
+    --fs-boton: 15px;
+    --fs-nav: 15px;
+
+    /* Pesos */
+    --peso-regular: 400;
+    --peso-semibold: 600;
+    --peso-bold: 700;
+}
